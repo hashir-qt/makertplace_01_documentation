@@ -41,20 +41,23 @@ Welcome to **Avion**, an e-commerce web application that allows users to browse,
 
 /avion-ecommerce
 ├── /components                  
-│   ├── CartContext.tsx          # Used in the entire application for cart state management
-│   ├── CartPage.tsx             # /cart – Displays the shopping cart
-│   ├── Navbar.tsx               # Navbar component, used in multiple pages
-│   └── /ui                      
-│       └── Button.tsx           # Reusable Button component
+│   ├── CartContext.tsx          # Used in the entire application for cart state 
+│   ├── NewArrivals.tsx          # Used on the landing page
+│   ├── Navbar.tsx               # Navbar component, used in entire application for navigation
+│   ├── Footer.tsx               # Navbar component, used in entire application
+│   ├── HeroSection.tsx          # landing component, used in homepage
+│   ├── RelatedProducts.tsx      # Used Under /product[slug]
 ├── /lib                         
 │   └── client.ts                # Sanity client setup, used for fetching data
 ├── /pages                       
 │   ├── _app.tsx                 # Global configuration, wraps the entire app (used in all pages)
 │   ├── index.tsx                # / – Home page showing the product list
 │   ├── product/[slug].tsx       # /product/[slug] – Dynamic page for individual product details
-│   └── checkout.tsx             # /checkout – Checkout page to review and complete orders
-├── /public                      
-│   └── placeholder.svg          # Image for missing product images, stored in public
+│   ├── [categories]/page.tsx    # /[categories]/page.tsx – Dynamic page for specific category
+│   ├── checkout/page.tsx        # /checkout – Checkout page to review and complete orders
+│   ├── cart/page.tsx            # /cart – Cart page to add items in cart
+├   ├── succes/page.tsx          # renders if the order placed successfully    
+│   └── allproducts/page.tsx     # renders all products from sanity            
 ├── /sanity                       
 │   ├── sanity.config.ts         # Sanity configuration file
 │   └── /studio                  # /studio – Sanity Studio content management UI
