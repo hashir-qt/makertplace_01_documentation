@@ -37,4 +37,28 @@ Welcome to **Avion**, an e-commerce web application that allows users to browse,
   - Sanity (Headless CMS for product management)
   - Vercel (for deployment)
 
+## Folder structure
+
+├── components
+│   ├── CartContext.tsx           # Provides cart context for global state management
+│   ├── CartPage.tsx              # Displays the shopping cart
+│   ├── Navbar.tsx                # Navigation bar component
+│   └── ui
+│       └── button.tsx            # Custom button component
+├── lib
+│   ├── client.ts                 # Sanity client setup
+├── pages
+│   ├── _app.tsx                  # Global app configuration
+│   ├── index.tsx                 # Home page (product listing)
+│   ├── product                  # Dynamic product page
+│   └── checkout.tsx              # Checkout page
+├── sanity
+│   ├── sanity.config.ts          # Sanity configuration file
+│   └── studio                    # Sanity Studio for content management
+├── public
+│   └── placeholder.svg           # Placeholder image for products
+├── styles
+│   └── globals.css               # Global styles
+└── .env.local                    # Environment variables for local setup
+
 
