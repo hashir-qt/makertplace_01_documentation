@@ -1,7 +1,7 @@
 Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
 TC001,Verify that the homepage loads successfully,1. Open the browser. 2. Navigate to the homepage URL,Homepage should load without errors,Homepage loaded successfully,Passed,Low,,N/A
 TC002,Check if the cart updates correctly when an item is added,1. Select an item. 2. Click "Add to Cart". 3. Verify the cart icon and total update accordingly,Cart should display the selected item with the correct quantity and price,Cart updated correctly,Passed,Medium,,N/A
-TC003,Validate error handling for an empty cart,1. Navigate to the cart page with no items. 2. Observe the displayed message,"Your cart is empty" message should be displayed,"Your cart is empty" message displayed,Passed,Low,,N/A
+TC003,Validate error handling for an empty cart,1. Navigate to the cart page with no items. 2. Observe the displayed message,Your cart is empty message should be displayed,"Your cart is empty" message displayed,Passed,Low,,N/A
 TC004,Ensure proper redirection for invalid product URLs,1. Enter a non-existent product URL. 2. Observe the response,User should see a "Product Not Found" page,"Product Not Found" page displayed,Passed,Medium,,N/A
 TC005,Test search functionality with valid inputs,1. Enter "chair" in the search bar. 2. Press Enter/Search button,Relevant products matching the search term should be displayed,Search results displayed as expected,Passed,Medium,,N/A
 TC006,Test search functionality with invalid inputs,1. Enter "randominvalidinput" in the search bar. 2. Press Enter/Search button,No results should be displayed with a user-friendly message,"No results found" message displayed,Passed,Low,,N/A
