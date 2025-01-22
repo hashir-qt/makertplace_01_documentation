@@ -39,26 +39,6 @@ Welcome to **Avion**, an e-commerce web application that allows users to browse,
 
 ## Folder structure
 
-├── components
-│   ├── CartContext.tsx           # Provides cart context for global state management
-│   ├── CartPage.tsx              # Displays the shopping cart
-│   ├── Navbar.tsx                # Navigation bar component
-│   └── ui
-│       └── button.tsx            # Custom button component
-├── lib
-│   ├── client.ts                 # Sanity client setup
-├── pages
-│   ├── _app.tsx                  # Global app configuration
-│   ├── index.tsx                 # Home page (product listing)
-│   ├── product                  # Dynamic product page
-│   └── checkout.tsx              # Checkout page
-├── sanity
-│   ├── sanity.config.ts          # Sanity configuration file
-│   └── studio                    # Sanity Studio for content management
-├── public
-│   └── placeholder.svg           # Placeholder image for products
-├── styles
-│   └── globals.css               # Global styles
-└── .env.local                    # Environment variables for local setup
+/avion-ecommerce ├── /components # Reusable UI components │ ├── CartContext.tsx # Cart context for global state management │ ├── CartPage.tsx # Displays the shopping cart page │ ├── Navbar.tsx # Navigation bar component │ ├── /ui # Custom UI components (buttons, forms, etc.) │ │ └── Button.tsx # Button component ├── /lib # Utility functions and integrations │ └── client.ts # Sanity client setup for data fetching ├── /pages # Next.js pages and routes │ ├── _app.tsx # Global configuration for the Next.js app │ ├── index.tsx # Home page showing the product list │ ├── product/[slug].tsx # Dynamic page for individual product details │ └── checkout.tsx # Checkout page for reviewing and completing the order ├── /public # Public assets (images, icons, etc.) │ └── placeholder.svg # Placeholder image for missing product images ├── /sanity # Sanity Studio and content management │ ├── sanity.config.ts # Sanity configuration file │ └── /studio # Sanity Studio content management UI ├── /styles # Global styles (Tailwind & custom styles) │ ├── globals.css # Global styles (base styles, custom styles) ├── .env.local # Environment variables for local development └── README.md # Project documentation
 
 
