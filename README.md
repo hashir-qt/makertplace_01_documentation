@@ -39,6 +39,26 @@ Welcome to **Avion**, an e-commerce web application that allows users to browse,
 
 ## Folder structure
 
-/avion-ecommerce ├── /components # Reusable UI components │ ├── CartContext.tsx # Cart context for global state management │ ├── CartPage.tsx # Displays the shopping cart page │ ├── Navbar.tsx # Navigation bar component │ ├── /ui # Custom UI components (buttons, forms, etc.) │ │ └── Button.tsx # Button component ├── /lib # Utility functions and integrations │ └── client.ts # Sanity client setup for data fetching ├── /pages # Next.js pages and routes │ ├── _app.tsx # Global configuration for the Next.js app │ ├── index.tsx # Home page showing the product list │ ├── product/[slug].tsx # Dynamic page for individual product details │ └── checkout.tsx # Checkout page for reviewing and completing the order ├── /public # Public assets (images, icons, etc.) │ └── placeholder.svg # Placeholder image for missing product images ├── /sanity # Sanity Studio and content management │ ├── sanity.config.ts # Sanity configuration file │ └── /studio # Sanity Studio content management UI ├── /styles # Global styles (Tailwind & custom styles) │ ├── globals.css # Global styles (base styles, custom styles) ├── .env.local # Environment variables for local development └── README.md # Project documentation
-
+/avion-ecommerce
+├── /components                  
+│   ├── CartContext.tsx          # Used in the entire application for cart state management
+│   ├── CartPage.tsx             # /cart – Displays the shopping cart
+│   ├── Navbar.tsx               # Navbar component, used in multiple pages
+│   └── /ui                      
+│       └── Button.tsx           # Reusable Button component
+├── /lib                         
+│   └── client.ts                # Sanity client setup, used for fetching data
+├── /pages                       
+│   ├── _app.tsx                 # Global configuration, wraps the entire app (used in all pages)
+│   ├── index.tsx                # / – Home page showing the product list
+│   ├── product/[slug].tsx       # /product/[slug] – Dynamic page for individual product details
+│   └── checkout.tsx             # /checkout – Checkout page to review and complete orders
+├── /public                      
+│   └── placeholder.svg          # Image for missing product images, stored in public
+├── /sanity                       
+│   ├── sanity.config.ts         # Sanity configuration file
+│   └── /studio                  # /studio – Sanity Studio content management UI
+├── /styles                       
+│   ├── globals.css              # Global styles (base styles, custom styles)
+└── .env.local                   # Stores local environment variables (e.g., API keys, Sanity project ID)
 
